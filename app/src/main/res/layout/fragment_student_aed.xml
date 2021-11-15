@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="40dp">
+
+        <RelativeLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/default_profile"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/dark_grey"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnAddPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                app:fabSize="mini"
+                android:backgroundTint="@color/dark_grey"
+                android:tint="@color/beige"
+                app:srcCompat="@drawable/ic_camera" />
+
+
+        </RelativeLayout>
+
+
+
+        <EditText
+            android:id="@+id/txtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imgLayout"
+            android:layout_marginTop="20dp"
+            android:hint="First Name"/>
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtFirstName"
+            android:layout_marginTop="20dp"
+            android:hint="Last Name"/>
+
+            <RelativeLayout
+                android:id="@+id/phoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtLastName"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/ttlPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Phone" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnAddPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    app:fabCustomSize="30dp"
+                    android:backgroundTint="@color/dark_grey"
+                    android:tint="@color/beige"
+                    app:srcCompat="@drawable/ic_add" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/phoneRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/phoneLayout" />
+
+
+            <RelativeLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/phoneRV"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/ttlEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Email" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnAddEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    app:fabCustomSize="30dp"
+                    android:backgroundTint="@color/dark_grey"
+                    android:tint="@color/beige"
+                    app:srcCompat="@drawable/ic_add" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/emailRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailLayout" />
+
+
+        <Button
+            android:id="@+id/btnConfirmAD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/emailRV"
+            android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

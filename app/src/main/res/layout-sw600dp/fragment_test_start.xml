@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="40dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/ttlStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Student Name"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ttlStudentName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnStartTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStudentName"
+        android:layout_marginTop="40dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_style"
+        android:text="Start Test" />
+
+    <TextView
+        android:id="@+id/ttlInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStartTest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/ttl_instruction"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/testInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttlInstruction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="1) There will be time allocation for each question\n2) Once the time is up, it will prompt the next question\n3) You may choose to pass the question\n4) The test will only end when you click the end test button"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/ttlScoreInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/testInstruction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Score System"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/scoreInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttlScoreInstruction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Correct Answer : 10 Marks\nWrong Answer: -5 Marks\n Pass: 0 Mark\n\nTotal Score Calculation\nScore/ (number of question completed x 10) / 100"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

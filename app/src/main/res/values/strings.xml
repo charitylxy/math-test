@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Math Test</string>
+    <string name="title_Search_online">Import from Pixabay</string>
+    <string name="title_Students">Students</string>
+    <string name="title_Test">Math Test</string>
+    <string name="title_Results">Test Results</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="ttl_instruction"><b> <u>Test Instruction </u> </b></string>
+</resources>
